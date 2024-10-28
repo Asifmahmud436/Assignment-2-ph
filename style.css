@@ -34,7 +34,7 @@ nav ul{
 nav>ul>li{
     list-style: none;
     margin: 9px;
-    font-weight: 600;
+    
     
     border-radius: 20px;
     color: white;
@@ -43,6 +43,7 @@ nav>ul>li{
 nav>ul>.special-li{
     background-color: rgb(230, 83, 60);
     color: white;
+    font-weight: 700;
 }
 nav .fa-solid{
     display: none;
@@ -152,6 +153,44 @@ nav h2{
 }
 
 
+/* habit section */
+main{
+    background-color: black;
+    color: white;
+}
+.habit{
+    max-width: 1044px;
+    margin: 0 auto;
+    text-align: center;
+}
+.habit>h1{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-weight: 900;
+    font-size: 3rem;
+}
+.habit>p{
+    padding-bottom: 140px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: .7rem;
+}
+.card-section{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.habit-card>img{
+    border-radius: 50%;
+    padding-bottom: 20px;
+}
+.habit-card>h3{
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+.habit-card>p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: .7rem;
+    padding-bottom: 40px;
+}
 @media screen and (max-width:576px) {
     /* nav{
         flex-direction: column;
@@ -163,6 +202,7 @@ nav h2{
         display: contents;
         color: white;
     }
+    
     /* hero section */
     .hero{
         flex-direction: column;
@@ -182,5 +222,15 @@ nav h2{
     .btn-tutorials{
         bottom: 120px;
         right: 100px;
+    }
+
+    /* habit section */
+    .card-section{
+        /* display: grid; */
+        grid-template-columns: repeat(1,1fr);
+    }
+    .habit>p{
+        padding: 20px;
+        padding-bottom: 50px;
     }
 }
