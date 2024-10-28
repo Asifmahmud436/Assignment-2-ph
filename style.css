@@ -81,7 +81,7 @@ nav h2{
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.hero-content>button{
+.hero-content>button,.mile-content>button{
     font-size: 1rem;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -98,8 +98,6 @@ nav h2{
     border: 1px solid rgb(255, 255, 255);
     border-radius: 42px;
     background-color: black;
-    
-
 }
 
 .hero-img{
@@ -162,6 +160,7 @@ main{
     max-width: 1044px;
     margin: 0 auto;
     text-align: center;
+    padding-bottom: 50px;
 }
 .habit>h1{
     padding-top: 50px;
@@ -191,10 +190,105 @@ main{
     font-size: .7rem;
     padding-bottom: 40px;
 }
+
+/* mile running part */
+.mile{
+    max-width: 1060px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    background-color: rgb(34, 34, 34);
+    padding: 30px;
+    border-radius: 18px;
+    /* padding-bottom: 50px; */
+    /* margin-top: 20px; */
+}
+.mile>img{
+    width: 366px;
+    height: 312px;
+    border-radius: 18px;
+}
+.mile>.mile-content{
+    max-width: 443px;
+    max-height: 290px;
+}
+.mile-content>p,.team-content>p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.7rem;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.mile-content>h1,.team-content>h1{
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+/* team section */
+.team{
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 60px;
+    
+}
+.team-card-section{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    background-color: rgb(34, 34, 34);
+    padding: 20px;
+    border-radius: 18px;
+}
+.team-card{
+    max-width: 327px;
+    height: 272px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 20px;
+    border-radius: 18px;
+    border: none;
+}
+.team-content{
+    text-align: center;
+}
+.team-card>h3{
+    font-weight: 600;
+}
+.team-card>p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.7rem;
+    margin-top: 10px;
+}
+.card1{
+    background-image: url('images/trainer1.png');
+    background-size: cover;
+}
+.card2{
+    background-image: url('images/trainer2.png');
+    background-size: cover;
+}
+.card3{
+    background-image: url('images/trainer3.png');
+    background-size: cover;
+}
+.card4{
+    background-image: url('images/trainer4.png');
+    background-size: cover;
+}
+.card5{
+    background-image: url('images/trainer5.png');
+    background-size: cover;
+}
+.card6{
+    background-image: url('images/trainer6.png');
+    background-size: cover;
+}
+
+
+
 @media screen and (max-width:576px) {
-    /* nav{
-        flex-direction: column;
-    } */
     nav>ul{
         display: none;
     }
@@ -204,7 +298,7 @@ main{
     }
     
     /* hero section */
-    .hero{
+    .hero,.mile{
         flex-direction: column;
     }
     .hero-content{
@@ -225,7 +319,7 @@ main{
     }
 
     /* habit section */
-    .card-section{
+    .card-section,.team-card-section{
         /* display: grid; */
         grid-template-columns: repeat(1,1fr);
     }
@@ -233,4 +327,13 @@ main{
         padding: 20px;
         padding-bottom: 50px;
     }
+
+    /* run a mile section */
+    .mile{
+        margin: 20px;
+    }
+    .mile-content>button{
+        margin-bottom: 20px;
+    }
+    
 }
