@@ -48,7 +48,7 @@ nav>ul>.special-li{
 nav .fa-solid{
     display: none;
 }
-nav h2{
+nav h2,.logo>h1{
     color: rgb(230, 83, 60);
     font-weight: 800;
     font-style: italic;
@@ -285,7 +285,38 @@ main{
     background-image: url('images/trainer6.png');
     background-size: cover;
 }
-
+/* footer part */
+footer{
+    background-color:gray;
+    color: white;
+}
+.footer-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 0 auto;
+    max-width: 1060px;
+    padding: 60px;
+    gap: 40px;
+}
+.logo{
+    max-width: 443px;
+}
+.logo>h1,.get-started>h2{
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+.footer-content p,.footer-content h4{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.7rem;
+    margin-top: 10px;
+}
+hr{
+    margin: 0 80px;
+}
+footer>h5{
+    text-align: center;
+    padding: 10px ;
+}
 
 
 @media screen and (max-width:576px) {
@@ -319,7 +350,7 @@ main{
     }
 
     /* habit section */
-    .card-section,.team-card-section{
+    .card-section,.team-card-section,.footer-content{
         /* display: grid; */
         grid-template-columns: repeat(1,1fr);
     }
@@ -334,6 +365,10 @@ main{
     }
     .mile-content>button{
         margin-bottom: 20px;
+    }
+    /* footer */
+    hr{
+        margin: 0 40px;
     }
     
 }
