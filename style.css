@@ -181,13 +181,15 @@ main{
     grid-template-columns: repeat(4,1fr);
 }
 .habit-card{
-    transition: border 1s,transform 1s;
+    transition: border 1s,transform 1s,color 1s,background-color 1s ease-in;
     padding: 20px;
 }
 .habit-card:hover{
     border: 2px solid gray;
     border-radius: 18px;
     transform: scale(1.2);
+    background-color: white;
+    color: black;
 }
 .habit-card>img{
     border-radius: 50%;
